@@ -8,15 +8,11 @@ on:
       -master
 
 jobs:
-  #where we have to build
   build:
-  #which machine
     runs-on: ubuntu-latest
 
-  steps:
-    # Runs the pull request action
-    - name: Print Coursename
-
-      env:
-        COURSE_NAME: Cloud Computing
-      run: echo $COURSE_NAME
+    steps:
+      - name: Print Coursename
+        env:
+          COURSE_NAME: Cloud Computing
+        run: echo $COURSE_NAME
