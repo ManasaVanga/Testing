@@ -2,7 +2,7 @@ name: Pull Request Checker for Master
 
 # Run this workflow every time a new commit pushed to your repository
 on: 
-  pullrequest:
+  pull_request:
     #On which branch you have to check
     branches:
       -master
