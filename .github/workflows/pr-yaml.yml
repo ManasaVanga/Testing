@@ -16,6 +16,7 @@ jobs:
   steps:
     # Runs the pull request action
     - name: Print Coursename
-        env:
-          COURSE_NAME: Cloud Computing
-        run: echo $COURSE_NAME
+
+      env:
+        COURSE_NAME: Cloud Computing
+      run: echo $COURSE_NAME
