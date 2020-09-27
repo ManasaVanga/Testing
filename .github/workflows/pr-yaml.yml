@@ -1,0 +1,20 @@
+name: Pull Request Checker for Master
+
+# Run this workflow every time a new commit pushed to your repository
+on: 
+  pull_request:
+    #On which branch you have to check
+    branches:
+      -master
+
+jobs:
+  #where we have to build
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Runs the pull request action
+      - name: Print Coursename
+        env:
+          COURSE_NAME: Cloud Computing
+        run: echo $COURSE_NAME
